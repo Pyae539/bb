@@ -1,0 +1,88 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:root {
+  --primary-color: #6953f1;
+}
+.btn {
+  padding: 10px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 70px;
+  gap: 6px;
+}
+.btn:hover {
+  background-color: #f153d9;
+}
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.text-wrap p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+.text-wrap .second-text {
+  width: 100%;
+  font-size: 18px;
+}
+
+.btn:hover .first-text {
+  transform: translateY(-25px);
+}
+.btn:hover .second-text {
+  top: 0px;
+}
+.first-text,
+.second-text {
+  transition: all 0.3s linear;
+}
+.first-text {
+  transition: all 0.3s linear;
+}
+.second-text {
+  position: absolute;
+  top: 35px;
+}
+.svg-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.second-svg {
+  position: absolute;
+  left: 30px;
+}
+.btn:hover .first-svg {
+  transform: translateX(-30px);
+}
+.btn:hover .second-svg {
+  left: 0px;
+}
+.first-svg,
+.second-svg {
+  transition: all 0.2s linear;
+}
